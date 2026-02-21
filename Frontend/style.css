@@ -1,0 +1,94 @@
+/* === Global Styles === */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0b1c2b, #1c2a3d);
+    color: #cce0ff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* === Container for side by side cards === */
+.container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* === Card Style === */
+.card {
+    background: rgba(10, 20, 35, 0.9);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 200, 255, 0.5);
+    width: 350px;
+    min-height: 600px;
+    overflow-y: auto;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* === Input Card === */
+.input-card h2 {
+    text-align: center;
+    color: #00e0ff;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Button */
+button {
+    background: #00aaff;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0090dd;
+}
+
+/* Result Card */
+/* .result-card h2 {
+    text-align: center;
+    color: #00e0ff;
+}
+
+.result-card pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #aadfff;
+    font-size: 14px;
+} */
+
+#resultCard {
+  background: rgba(10, 20, 40, 0.7);
+  border: 2px solid #00bfff;
+  border-radius: 16px;
+  color: #e0f7ff;
+  font-size: 1.1rem;           /* slightly bigger text */
+  font-family: 'Poppins', sans-serif;  /* clean readable font */
+  padding: 20px;
+  line-height: 1.5;
+  white-space: pre-wrap;       /* keep line breaks */
+  overflow-wrap: break-word;   /* break long lines nicely */
+  max-height: 100%;
+  overflow: hidden;            /* ensures text stays inside card */
+  text-align: left;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loan Approval System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Input Card -->
+        <div class="card input-card">
+            <h2>Loan Application</h2>
+            <form id="loanForm">
+                <label>Name:</label>
+                <input type="text" name="name" required>
+
+                <label>Age:</label>
+                <input type="number" name="age" required>
+
+                <label>ID Proof (Aadhaar and PAN):</label>
+                <select name="idProof" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+
+                <label>Employment Type:</label>
+                <select name="employment" required>
+                    <option value="Salaried">Salaried</option>
+                    <option value="SelfEmployed">Self Employed</option>
+                </select>
+
+                <label>Loan Type:</label>
+                <select name="loanType" required>
+                    <option value="1">Housing Loan</option>
+                    <option value="2">Vehicle Loan</option>
+                    <option value="3">Secured Personal Loan</option>
+                </select>
+
+                <label>Principal (₹):</label>
+                <input type="number" name="principal" required>
+
+                <label>Net Monthly Income (₹):</label>
+                <input type="number" name="income" required>
+
+                <label>Existing Monthly Obligations (₹):</label>
+                <input type="number" name="obligations" required>
+
+                <label>Collateral Value (₹):</label>
+                <input type="number" name="collateral" required>
+
+                <label>Credit Score:</label>
+                <input type="number" name="creditScore" required>
+
+                <button type="submit">Calculate Loan</button>
+            </form>
+        </div>
+
+        <!-- Result Card -->
+        <div class="card result-card">
+            <h2>Result</h2>
+            <pre id="resultCard">Results will appear here...</pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
