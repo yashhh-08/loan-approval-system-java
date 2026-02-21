@@ -19,7 +19,7 @@ The system evaluates loan eligibility based on financial parameters such as:
 - Clean Frontend UI with Backend Server Processing
 
 
-## 🛠 Tech Stack
+# Tech Stack
 - Java
 - Object-Oriented Programming (OOP)
 - HTML
